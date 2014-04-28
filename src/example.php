@@ -1,12 +1,12 @@
 <html>
     <head>
-        <title>Сваляне на клипчета от VBox7</title>
+        <title>Сваляне на видео клипове от Vbox7</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
         <div id="wrapper">
-            <h1>Сваляне на видео от Vbox7</h1>
+            <h1>Сваляне на видео от Вибокс7</h1>
             <form method="post" action="">
                 http://www.vbox7.com/play: 
                 <input placeholder="video-id" class="text" name="videoID" type="text" /> 
