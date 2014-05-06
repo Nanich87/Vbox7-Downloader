@@ -3,10 +3,15 @@
     padding: 0px; 
 }
 
-body {
+html, body {
     background: #303030;
     font-family: Verdana;
-    font-size: 100%;
+    font-size: 14px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #000000;
+    text-decoration: none;
 }
 
 #wrapper {
@@ -21,27 +26,37 @@ body {
     border-radius: 25px;
 }
 
-#wrapper form {
+#wrapper > h1 {
+    font-size: 140%;
+    padding: 10px;
+}
+
+#wrapper > p {
+    font-size: 90%;
+    padding: 0px 10px 0px 10px;
+    text-align: justify;
+}
+
+#wrapper > form {
     margin: 10px;
     padding: 10px;
 }
 
-#wrapper form input {
+#wrapper > form > input {
     padding: 5px;
     border-radius: 5px;
 }
 
-#wrapper form input.button {
+#wrapper > form > input.button {
     border: 2px outset #000000;
     width: 100px; 
     cursor: pointer;
 }
 
-#wrapper form input.text {
+#wrapper > form > input.text {
     border: 2px solid #000000;
 }
 
-#wrapper div.link {
+#wrapper > div.link {
     margin: 10px;
-    font-size: 80%;
 }
