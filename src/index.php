@@ -6,7 +6,10 @@
     </head>
     <body>
         <div id="wrapper">
-            <h1>Сваляне на видео от Вибокс7</h1>
+            <h1>Сваляне от Vbox</h1>
+            <p><a target="blank" title="Vbox7 Downloader" href="https://github.com/Nanich87/Vbox7-Downloader">Vbox7 Downloader</a> е безплатна open source онлайн услуга за сваляне на видео клипчета от сайта Vbox7.com</p>
+            <p>Поставете идентификатора на клипа, който искате да изтеглите в полето video-id и кликнете върху бутона Свали!</p>
+            <p>Готово! Вашият видео клип е готов за сваляне :)</p>
             <form method="post" action="">
                 http://www.vbox7.com/play: 
                 <input placeholder="video-id" class="text" name="videoID" type="text" /> 
