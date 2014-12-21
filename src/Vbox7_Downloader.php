@@ -13,12 +13,6 @@ class Vbox7_Downloader {
         }
     }
 
-    /*
-      public function setVideoId($videoId) {
-      $this->_videoId = $videoId;
-      }
-     */
-
     private function executeCurl() {
         $url = 'http://vbox7.com/play/magare.do';
         $body = sprintf('vid=%s', $this->_videoId);
