@@ -17,36 +17,27 @@
             </form>
             <div class="link">
                 <?php
-                try
-                {
+                try {
                     require './Vbox7_Downloader.php';
 
-                    if (isset($_POST['submit'], $_POST['videoID']))
-                    {
-                        if (empty($_POST['videoID']))
-                        {
+                    if (isset($_POST['submit'], $_POST['videoID'])) {
+                        if (empty($_POST['videoID'])) {
                             throw new Exception('Няма въведен идентификатор на видео клип!');
                         }
 
-                        if (!preg_match("/^[a-z0-9]+$/u", $_POST['videoID']))
-                        {
+                        if (!preg_match("/^[a-z0-9]+$/u", $_POST['videoID'])) {
                             throw new Exception('Невалиден идентификатор на видео клип!');
                         }
 
-                        $downloader = new Vbox7_Downloader;
-                        $downloader->setVideoId($_POST['videoID']);
-                        if ($downloader->execute())
-                        {
+                        $downloader = new Vbox7_Downloader($_POST['videoID']);
+                        $url = $downloader->getVideoUrl();
+                        if (empty($url)) {
+                            echo 'Не може да намери файла!';
+                        } else {
                             echo '<a href="' . $downloader->getVideoUrl() . '">Връзка към файла</a>';
                         }
-                        else
-                        {
-                            echo 'Не може да намери файла!';
-                        }
                     }
-                }
-                catch (Exception $ex)
-                {
+                } catch (Exception $ex) {
                     echo $ex->getMessage();
                 }
                 ?>
