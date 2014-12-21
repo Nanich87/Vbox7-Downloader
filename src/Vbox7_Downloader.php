@@ -7,7 +7,7 @@ class Vbox7_Downloader {
 
     public function __construct($videoId) {
         if (self::isValidVideoId($videoId)) {
-            $this->_video = $videoId;
+            $this->_videoId = $videoId;
         } else {
             throw new Exception('Невалиден идентификатор на видео клип!');
         }

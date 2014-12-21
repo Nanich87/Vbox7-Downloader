@@ -30,7 +30,7 @@
                         if (empty($url)) {
                             echo 'Не може да намери файла!';
                         } else {
-                            echo '<a href="' . $downloader->getVideoUrl() . '">Връзка към файла</a>';
+                            echo '<a href="' . $url . '">Връзка към файла</a>';
                         }
                     }
                 } catch (Exception $ex) {
