@@ -25,10 +25,6 @@
                             throw new Exception('Няма въведен идентификатор на видео клип!');
                         }
 
-                        if (!preg_match("/^[a-z0-9]+$/u", $_POST['videoID'])) {
-                            throw new Exception('Невалиден идентификатор на видео клип!');
-                        }
-
                         $downloader = new Vbox7_Downloader($_POST['videoID']);
                         $url = $downloader->getVideoUrl();
                         if (empty($url)) {
